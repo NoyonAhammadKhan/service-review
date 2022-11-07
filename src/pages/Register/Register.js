@@ -2,7 +2,8 @@ import React from 'react';
 
 const Register = () => {
     return (
-        <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 dark:bg-gray-900 dark:text-gray-100">
+        <div className='m-auto'>
+             <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 dark:bg-gray-900 dark:text-gray-100">
 	<div className="mb-8 text-center">
 		<h1 className="my-3 text-4xl font-bold">Sign in</h1>
 		<p className="text-sm dark:text-gray-400">Sign in to access your account</p>
@@ -31,6 +32,8 @@ const Register = () => {
 		</div>
 	</form>
 </div>
+        </div>
+       
     );
 };
 
