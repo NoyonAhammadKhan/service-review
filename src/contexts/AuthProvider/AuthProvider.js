@@ -13,18 +13,18 @@ const AuthProvider = ({children}) => {
     const [loading,setLoading]=useState(true);
 
 
-    const handleEmailRegister=(email,password)=>{
+    const emailRegister=(email,password)=>{
         setLoading(true)
         return createUserWithEmailAndPassword(auth,email,password);
     }
     
-    const handleEmailLogin=(email,password)=>{
+    const emailLogin=(email,password)=>{
         setLoading(true)
         return signInWithEmailAndPassword(auth,email,password);
     }
 
 
-    const handleProviderLogin=(provider)=>{
+    const providerLogin=(provider)=>{
         setLoading(true)
         return signInWithPopup(auth, provider)
     }
@@ -47,7 +47,7 @@ const AuthProvider = ({children}) => {
 
     
 
-    const authInfo={user,setUser,handleEmailLogin,handleEmailRegister,handleProviderLogin,logOut};
+    const authInfo={user,setUser,emailLogin,emailRegister,providerLogin,logOut};
     return (
         <AuthContext.Provider value={authInfo}>
             {children}
