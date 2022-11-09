@@ -2,7 +2,12 @@ import React from 'react';
 
 const About = () => {
     return (
+        <div>
+             <div className='mb-5'>
+                <h1 className='text-6xl text-center font-bold'>About</h1>
+            </div>
         <section className="dark:bg-gray-800 dark:text-gray-100 border-2 border-indigo-600 w-11/12 mx-auto my-auto">
+           
         <div className="container flex flex-col mx-auto lg:flex-row">
             <div className="w-full lg:w-1/3" style={{backgroundImage:" url('https://source.unsplash.com/random/640x480')",backgroundPosition: "center center", backgroundSize: "cover"}}></div>
             <div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12">
@@ -15,6 +20,7 @@ const About = () => {
             </div>
         </div>
     </section>
+    </div>
     );
 };
 
