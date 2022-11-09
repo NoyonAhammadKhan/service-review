@@ -23,7 +23,7 @@ const Footer = () => {
 						<a rel="noopener noreferrer" href="#">Features</a>
 					</li>
 					<li>
-						<a rel="noopener noreferrer" href="#">Integrations</a>
+						<a rel="noopener noreferrer" href="#">Services</a>
 					</li>
 					<li>
 						<a rel="noopener noreferrer" href="#">Pricing</a>
@@ -45,16 +45,16 @@ const Footer = () => {
 				</ul>
 			</div>
 			<div className="space-y-3">
-				<h3 className="uppercase dark:text-gray-50">Developers</h3>
+				<h3 className="uppercase dark:text-gray-50">Electrician</h3>
 				<ul className="space-y-1">
 					<li>
-						<a rel="noopener noreferrer" href="#">Public API</a>
+						<a rel="noopener noreferrer" href="#">Public Review</a>
 					</li>
 					<li>
-						<a rel="noopener noreferrer" href="#">Documentation</a>
+						<a rel="noopener noreferrer" href="#">Electronics Documentation</a>
 					</li>
 					<li>
-						<a rel="noopener noreferrer" href="#">Guides</a>
+						<a rel="noopener noreferrer" href="#">Guides For Electronics Product</a>
 					</li>
 				</ul>
 			</div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Banner from './Banner/Banner';
+import Pricing from './Pricing/Pricing';
 import ServicePortion from './ServicePortion/ServicePortion';
 
 
@@ -17,6 +18,7 @@ const Home = () => {
         <div>
            <ServicePortion services={services}/>
            <Banner/>
+           <Pricing/>
         </div>
     );
 };
