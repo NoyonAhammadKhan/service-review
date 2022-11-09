@@ -40,5 +40,7 @@ module.exports = {
 		plugins: [],
     extend: {},
   },
-  plugins: [],
+  plugins: [
+	require('flowbite/plugin')
+  ],
 }

@@ -7,10 +7,13 @@ import { useEffect } from 'react';
 export const AuthContext=createContext();
 const auth = getAuth(app);
 
+
+
 const AuthProvider = ({children}) => {
   
     const [user,setUser]=useState([]);
     const [loading,setLoading]=useState(true);
+    const MainURL='http://127.0.0.1:5500/'
 
 
     const emailRegister=(email,password)=>{
@@ -47,7 +50,7 @@ const AuthProvider = ({children}) => {
 
     
 
-    const authInfo={user,setUser,emailLogin,emailRegister,providerLogin,logOut};
+    const authInfo={user,setUser,emailLogin,emailRegister,providerLogin,logOut,MainURL};
     return (
         <AuthContext.Provider value={authInfo}>
             {children}
