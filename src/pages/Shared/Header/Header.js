@@ -19,25 +19,30 @@ const Header = () => {
               <Link to='/'>Home Electro</Link>
             </div>
             <ul className="items-stretch hidden space-x-3 lg:flex">
+                  
+                {user ?
+                    <>
                 <li className="flex">
-                   <Link to='/blog'>Blog</Link>
+                   <Link  className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-400 dark:text-gray-900" to='/my-reviews'>My Reviews</Link>
                 </li>
                 <li className="flex">
-                    <Link to='/blog'>Blog</Link>
+                    <Link  className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-400 dark:text-gray-900" to='/add-services'>Add Service</Link>
                 </li>
                 <li className="flex">
-                    <Link to='/blog'>Blog</Link>
+                    <Link to="/services" className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-400 dark:text-gray-900">All Service</Link>
                 </li>
+                </> : ''
+                }
                 <li className="flex">
-                    <Link to='/blog'>Blog</Link> 
+                   <Link  className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-400 dark:text-gray-900" to='/blogs'>Blogs</Link>
                 </li>
             </ul>
             <div className="items-center flex-shrink-0 hidden lg:flex">
                {
                 user? 
-                <button onClick={handleLogout}>Logout</button>:
+                <button className="self-center px-8 py-3 font-semibold rounded" onClick={handleLogout}>Logout</button>:
                 <>
-                <Link to="/login"><button className="self-center px-8 py-3 rounded">Sign in</button></Link> 
+                <Link to="/login"><button  className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Sign in</button></Link> 
                 <Link to="/register"> <button className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Sign up</button></Link>   
                 </>
                
