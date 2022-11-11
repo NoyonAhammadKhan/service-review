@@ -18,7 +18,7 @@ const AddService = () => {
       }
       form.reset()
      
-      fetch(`http://localhost:5000/services`,{
+      fetch(`https://b6a11-service-review-server-side-noyon-ahammad-khan.vercel.app/services`,{
         method:'POST',
         headers:{
             'content-type':'application/json'

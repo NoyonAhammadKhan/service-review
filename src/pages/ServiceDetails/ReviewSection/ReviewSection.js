@@ -24,7 +24,7 @@ const ReviewSection = ({ reviews }) => {
             userEmail:userEmail,
             serviceId:serviceId,
         }
-        fetch(`http://localhost:5000/my-reviews`,{
+        fetch(`https://b6a11-service-review-server-side-noyon-ahammad-khan.vercel.app/my-reviews`,{
             method:'POST',
             headers:{
                 'content-type':'application/json'

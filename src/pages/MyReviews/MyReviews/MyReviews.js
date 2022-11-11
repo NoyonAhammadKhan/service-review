@@ -9,7 +9,7 @@ const MyReviews = () => {
     const { user } = useContext(AuthContext);
     const [reviews, setReviews] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/my-reviews?email=${user.email}`, {
+        fetch(`https://b6a11-service-review-server-side-noyon-ahammad-khan.vercel.app/my-reviews?email=${user.email}`, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('service-token')}`
             }
@@ -19,7 +19,7 @@ const MyReviews = () => {
                 console.log(data)
                 setReviews(data);
             })
-    }, [])
+    },[])
     return (
         <div>
             {reviews.length ?(<div>

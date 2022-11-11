@@ -10,7 +10,7 @@ import ServicePortion from './ServicePortion/ServicePortion';
 const Home = () => {
     const [services,setServices]=useState([]);
     useEffect(()=>{
-        fetch('http://127.0.0.1:5000/services?dataAmount=3')
+        fetch('https://b6a11-service-review-server-side-noyon-ahammad-khan.vercel.app/services?dataAmount=3')
         .then(res=>res.json())
         .then(data=>setServices(data));
     },[])

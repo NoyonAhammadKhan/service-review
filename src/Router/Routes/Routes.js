@@ -38,17 +38,17 @@ const router = createBrowserRouter([
             {
                 path:"/services",
                 element:<Services></Services>,
-                loader:()=>fetch('http://127.0.0.1:5000/services')
+                loader:()=>fetch('https://b6a11-service-review-server-side-noyon-ahammad-khan.vercel.app/services')
             },
             {
                 path:'/services/:id',
                 element:<ServiceDetails/>,
-                loader:({params})=>fetch(`http://127.0.0.1:5000/services/${params.id}`)
+                loader:({params})=>fetch(`https://b6a11-service-review-server-side-noyon-ahammad-khan.vercel.app/services/${params.id}`)
             },
             {
                 path:"/blogs",
                 element:<Blogs></Blogs>,
-                loader:()=>fetch('http://localhost:5000/blogs')
+                loader:()=>fetch('https://b6a11-service-review-server-side-noyon-ahammad-khan.vercel.app/blogs')
             },
             {
                 path:"/my-reviews",
