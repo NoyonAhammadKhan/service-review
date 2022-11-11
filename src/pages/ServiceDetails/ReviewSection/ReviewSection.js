@@ -7,15 +7,15 @@ import ReviewCard from './ReviewCard';
 const ReviewSection = ({ reviews }) => {
     const {user}=useContext(AuthContext);
     // const {serviceId}=reviews[0];
-    console.log('reviews',reviews[0].serviceId)
+    // console.log('reviews',reviews[0].serviceId)
     const handleReview = (event) => {
         event.preventDefault();
         const reviewDetails = event.target.review.value;
         const reviewerName =event.target.userName.value;
         const reviewerPicture=user?.photoURL
         const userEmail = user?.email
-        const serviceId=reviews[0].serviceId;
-        console.log(serviceId)
+        const serviceId=reviews[0]?.serviceId;
+        // console.log(serviceId)
         event.target.reset()
         const review={
             reviewDetails:reviewDetails,

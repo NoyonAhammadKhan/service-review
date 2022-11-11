@@ -12,6 +12,7 @@ import MyReviews from '../../pages/MyReviews/MyReviews/MyReviews';
 import Register from '../../pages/Register/Register';
 import ServiceDetails from '../../pages/ServiceDetails/ServiceDetails/ServiceDetails';
 import Services from '../../pages/Services/Services/Services';
+import PrivateRoute from '../PrivateRoutes/PrivateRoute';
 const { createBrowserRouter } = require("react-router-dom");
 
 
@@ -51,12 +52,12 @@ const router = createBrowserRouter([
             },
             {
                 path:"/my-reviews",
-                element:<MyReviews/>,
+                element:<PrivateRoute><MyReviews/></PrivateRoute>,
                
             },
             {
                 path:"/add-services",
-                element:<AddService/>
+                element:<PrivateRoute><AddService/></PrivateRoute>
             }
         ]
     }
