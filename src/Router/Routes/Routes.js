@@ -5,7 +5,7 @@ import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 // import { createBrowserRouter } from 'react-router-dom'
 import Main from '../../layouts/Main';
 import AddService from '../../pages/AddService/AddService';
-import Blogs from '../../pages/Blog/Blog/Blog';
+import Blogs from '../../pages/Blog/Blogs/Blogs';
 import Home from '../../pages/Home/Home';
 import Login from '../../pages/Login/Login';
 import MyReviews from '../../pages/MyReviews/MyReviews/MyReviews';
